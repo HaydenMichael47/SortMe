@@ -1,23 +1,15 @@
-
+#read the file into a list
 file1 = open('Sort Me.txt')
-lines = file1.readlines()  #[]
+lines = file1.readlines()  
 file1.close()
-#with open('Sort Me.txt') as f:
- #   for line in f:
-  #      if not line.isspace():
-   #         lines.append(line)
 
-    #lines = f.readlines()
-    
-    
+#remove empty space and extra characters   
 for x in lines:
     if x.isspace():
         lines.remove(x)
     
 for x in range(len(lines)):
     lines[x] = lines[x].rstrip()
-    
-
 
 for x in range(len(lines)):
     lines[x] = lines[x].replace(" ", "")
@@ -28,7 +20,6 @@ def sort(fileStrings):
     tempList = []
 
     #now sort alpabetically
-    #indexLow = 0
     indexHigh = 0
     currLength = len(fileStrings[0])
     #iterate through entire list
@@ -48,17 +39,20 @@ def sort(fileStrings):
             fileStrings[i] = tempList[counter]
             counter +=1
 
+        #reset temp variables and update index
         tempList.clear()
         counter = 0
         x=indexHigh-1
 
 
-
+    #After the list is properly sorted, output the results
     for x in fileStrings:
         print(x)
 
 
 
+
+#Test the sort method
 sort(lines)
 
 
