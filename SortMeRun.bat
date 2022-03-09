@@ -1,2 +1,11 @@
 @echo off
-"\SortMe\python3 SortMe.py"
+where python > tmpFile
+set /p pyPath= < tmpFile
+del tmpFile
+echo %pyPath%
+
+set myPath=%cd%
+echo %myPath%
+
+%pyPath% %myPath%\SortMe.py
+PAUSE

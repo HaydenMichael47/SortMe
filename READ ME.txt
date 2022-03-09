@@ -1,0 +1,19 @@
+Author: Hayden Michael
+
+Objective:
+
+Take a file with lines of different words and sort them first by length, followed by alphabetically.
+The program should automatically read the file and output the sorted file.
+The SortMeRun file is used to automate the testing process.
+
+Constraints:
+
+Each file must stay within the same directory, and each file can't be renamed.
+
+How to run:
+
+To run, make sure that you are in the same directory in the command line or the shell.
+In Linux, type 'sh SortMeRun.sh'
+In Windows, type 'bash SortMeRun.sh'
+To change test data, simply open the 'Sort Me.txt' file and modify the input data, then save before closing.
+

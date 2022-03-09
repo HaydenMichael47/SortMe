@@ -1,17 +1,21 @@
-#from tkinter import Y
 
-
-from asyncio.windows_events import NULL
-
-
-lines = []
-with open('Sort Me.txt') as f:
-    for line in f:
-        if not line.isspace():
-            lines.append(line)
+file1 = open('Sort Me.txt')
+lines = file1.readlines()  #[]
+file1.close()
+#with open('Sort Me.txt') as f:
+ #   for line in f:
+  #      if not line.isspace():
+   #         lines.append(line)
 
     #lines = f.readlines()
     
+    
+for x in lines:
+    if x.isspace():
+        lines.remove(x)
+    
+for x in range(len(lines)):
+    lines[x] = lines[x].rstrip()
     
 
 
@@ -21,7 +25,7 @@ for x in range(len(lines)):
 def sort(fileStrings):
     fileStrings.sort(key= len) #sorts by length first
 
-    tempList = [];
+    tempList = []
 
     #now sort alpabetically
     #indexLow = 0
@@ -51,9 +55,10 @@ def sort(fileStrings):
 
 
     for x in fileStrings:
-        print("1 " + x)
+        print(x)
 
 
 
 sort(lines)
+
 
