@@ -1,3 +1,7 @@
+import sys
+
+#print(sys.argv[1])
+
 #read the file into a list
 file1 = open('Sort Me.txt')
 lines = file1.readlines()  
@@ -14,7 +18,7 @@ for x in range(len(lines)):
 for x in range(len(lines)):
     lines[x] = lines[x].replace(" ", "")
 
-def sort(fileStrings):
+def sortList(fileStrings):
     fileStrings.sort(key= len) #sorts by length first
 
     tempList = []
@@ -46,13 +50,29 @@ def sort(fileStrings):
 
 
     #After the list is properly sorted, output the results
-    for x in fileStrings:
-        print(x)
+   # for x in fileStrings:
+        #print(x)
+
+    return fileStrings
+
+def reverseSort(fileStrings):
+    fileStrings = sortList(fileStrings)
+    fileStrings.reverse()
+    
+    
+    return fileStrings
 
 
 
 
 #Test the sort method
-sort(lines)
+if(len(sys.argv)>1 and sys.argv[1] == "-r"):
+    lines = reverseSort(lines)
+    for x in lines:
+        print(x)
+else:
+    lines = sortList(lines)
+    for x in lines:
+        print(x)
 
 
