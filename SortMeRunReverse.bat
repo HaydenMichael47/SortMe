@@ -7,5 +7,5 @@ echo %pyPath%
 set myPath=%cd%
 echo %myPath%
 
-%pyPath% %myPath%\SortMe.py
+%pyPath% %myPath%\SortMe.py -r
 PAUSE

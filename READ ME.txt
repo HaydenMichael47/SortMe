@@ -3,6 +3,7 @@ Author: Hayden Michael
 Objective:
 
 Take a file with lines of different words and sort them first by length, followed by alphabetically.
+Alternatively, the reverse option will do the sort and reverse the order.
 The program should automatically read the file and output the sorted file.
 The SortMeRun file is used to automate the testing process.
 
@@ -13,7 +14,10 @@ Each file must stay within the same directory, and each file can't be renamed.
 How to run:
 
 To run, make sure that you are in the same directory in the command line or the shell.
-In Linux, double click the file SortMeRun.sh or type 'sh SortMeRun.sh'
-In Windows, double click the file SortMeRun.bat or type 'bash SortMeRun.sh'
+In Linux, double click the file SortMeRun.sh or type 'sh SortMeRun.sh' to run the regular sort
+Alternatively, double click the file SortMeRunReverse.sh or type 'sh SortMeRunReverse.sh' to run the reverse sort
+
+In Windows, double click the file SortMeRun.bat or type 'bash SortMeRun.sh' to run the regular sort
+Alternatively, double click the file SortMeRunReverse.bat or type 'bash SortMeRunReverse.sh' to run the reverse sort
 To change test data, simply open the 'Sort Me.txt' file and modify the input data, then save before closing.
 
