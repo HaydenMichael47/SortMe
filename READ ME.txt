@@ -10,6 +10,7 @@ The SortMeRun file is used to automate the testing process.
 Constraints:
 
 Each file must stay within the same directory, and each file can't be renamed.
+Do not add any file named 'tmpFile.txt' to the directory. Running the test files will overwrite the data inside and delete the file afterwards.
 
 How to run:
 
@@ -21,3 +22,10 @@ In Windows, double click the file SortMeRun.bat or type 'bash SortMeRun.sh' to r
 Alternatively, double click the file SortMeRunReverse.bat or type 'bash SortMeRunReverse.sh' to run the reverse sort
 To change test data, simply open the 'Sort Me.txt' file and modify the input data, then save before closing.
 
+How to run a test:
+
+Double click the file 'SortMeRunTest' to test the normal sort function
+If there are any errors, the results will specify, otherwise it will say that the sort has passed.
+
+Double click the file 'SortMeRunReverseTest' to test the reverse sort function
+If there are any errors, the results will specify, otherwise it will say that the sort has passed.
