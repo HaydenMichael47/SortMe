@@ -7,4 +7,3 @@ then
 fi
 
 rm tmpFile.txt
-read -p "Execution complete."
