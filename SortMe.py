@@ -68,7 +68,7 @@ def reverseSort(fileStrings):
 #Test the sort method
 if(len(sys.argv)>1 and sys.argv[1] == "-r"):
     lines = reverseSort(lines)
-    lines.append("Hello")
+    #lines.append("Hello")
     for x in lines:
         print(x)
 else:
