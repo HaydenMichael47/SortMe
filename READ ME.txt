@@ -29,3 +29,6 @@ If there are any errors, the results will specify, otherwise it will say that th
 
 Double click the file 'SortMeRunReverseTest' to test the reverse sort function
 If there are any errors, the results will specify, otherwise it will say that the sort has passed.
+
+Whenever a change is made and pushed to github, the repository will automatically run the tests. If the tests
+are incorrect, github will display an error. Otherwise, it will accept the push with no errors.
