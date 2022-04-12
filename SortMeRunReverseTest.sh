@@ -1,10 +1,9 @@
 python3 SortMe.py -r >tmpFile.txt
 
-if diff -q -w -b tmpFile.txt SortMeReverseAnswer.txt; then
-    echo "Sort was correct."
-else
-    echo "Sort failed."
+if ! diff -w -b tmpFile.txt SortMeReverseAnswer.txt; then
+    rm tmpFile.txt
+    exit 2
 fi
 rm tmpFile.txt
-read -p "Execution complete."
+
 

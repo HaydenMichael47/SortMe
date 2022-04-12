@@ -28,3 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run the normal Sort Test
         run: sh ./SortMeRunTest.sh
+
+      # Runs a single command using the runners shell
+      - name: Run the reverse Sort Test
+        run: sh ./SortMeRunReverseTest.sh
